@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/Demous.png" />
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Demous</title>
+</head>
+<body>
+<header style="background-image: url('img/landscape.jpg'); background-size: cover;">
+
+    <!-- nav bar -->
+    <nav class="nav_bar">
+    <div class="menu">
+        <ul id="head_menu">
+            <!-- Home button -->
+            <li><a id="home">Home</a></li>
+            <!-- Portfolio button -->
+            <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
+            <!-- Contact button -->
+            <li><a id="contact" href="contact.html">Contact</a><li>
+        </ul>
+    </div>
+
+    <!-- hamburger_button -->
+    <img src="img/menu-btn.png" class="hamburger_button">
+    </nav>
+
+
+    <div class="title">
+        <!-- title of the page -->
+        <h2>Like</h2>
+        <!-- second title of the page -->
+        <h2 id="second_title">Et abonne toi</h2>
+    </div>
+</header>
+
+</body>
+<script>
+        /* select the image balise */
+        const menuHamburger = document.querySelector(".hamburger_button")
+        /* select the nav bar */
+        const navLinks = document.querySelector(".menu")
+
+        /* if the image is click */
+        menuHamburger.addEventListener('click',()=>{
+        /* add a class for the nav bar  */
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</html> 

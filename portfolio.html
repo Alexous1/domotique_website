@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/Demous.png" />
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <!-- nav bar -->
+        <nav class="nav_bar">
+            <div class="menu">
+                <ul id="head_menu">
+                    <!-- Home button -->
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <!-- Portfolio button -->
+                    <li><a id="portfolio">Portfolio</a></li>
+                    <!-- Contact button -->
+                    <li><a id="contact" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- hamburger_button -->
+            <img src="img/menu-btn.png" class="hamburger_button">
+        </nav>
+
+        <!-- div sentence -->
+        <div class="text">
+            <!-- sentence about me -->
+            <h3 class="home_title">Hello, It's me</h3>
+            <h1 class="home_title">Name Family name</h1>
+            <h3 class="home_title">And I'm a <span style="font-size: 1em;">Developer</span></h3>
+        </div>
+
+        <div class="info">
+            <!-- carousel -->
+            <div class="swiper">
+                <!-- carousel images -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/arduino.png"></div>
+                    <div class="swiper-slide"><img src="img/html.png"></div>
+                    <div class="swiper-slide"><img src="img/python.png"></div>
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <!-- sentence about me -->
+        <h3>About Me</h3>
+        <p>I'm a schoolboy in French</p>
+        <p>I specialize in <span>frontend</span></p>
+    </div>
+
+    <!-- div example -->
+    <div class="example">
+        <!-- title of the div -->
+        <h1>My example</h1>
+        <!-- image example -->
+        <div class="imgs">
+            <img src="img/example1.png">
+            <img src="img/example2.png">
+            <img src="img/example3.png">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="javascript/carousel.js"></script>
+</body>
+<script>
+        /* select the image balise */
+        const menuHamburger = document.querySelector(".hamburger_button");
+        /* select the nav bar */
+        const navLinks = document.querySelector(".menu");
+        /* select the carousel */
+        const swipe = document.querySelector(".swiper-wrapper");
+        let imgDisplayed = true;
+
+        /* if the image is click */
+        menuHamburger.addEventListener('click', () => {
+            /* add a class for the nav bar  */
+            navLinks.classList.toggle('mobile-menu');
+            console.log(imgDisplayed);
+
+            /* displays the image */
+            if (imgDisplayed) {
+                swipe.style.display = "none";
+                console.log("swipe hidden");
+                imgDisplayed = false;
+            }
+
+            /* hide the image */
+            else {
+                swipe.style.display = "flex";
+                console.log("swipe displayed");
+                imgDisplayed = true;
+            }
+       });
+</script>
+</html>

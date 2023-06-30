@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+<header>
+    <!-- nav bar -->
+    <nav class="nav_bar">
+    <div class="menu"   >
+        <ul id="head_menu">
+            <!-- Home button -->
+            <li><a id="home" href="index.html">Home</a></li>
+            <!-- Portfolio button -->
+            <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
+            <!-- Contact button -->
+            <li><a id="contact" href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- hamburger_button -->
+    <img src="img/menu-btn.png" class="hamburger_button">
+    </nav>
+
+
+    <div class="all">
+        <!-- title of the page -->
+        <h1>Contactez-nous</h1>
+
+        <div>
+            <!-- paragraph -->
+            <p>Vous pouvez nous<span> contacter </span>en utilisant les coordonnées ci-dessous :</p>
+            <div class="contact">
+                <!-- logo of email -->
+                <a href="#"><img class="logo" src="img/email.png" alt="Logo e-mail" id="logo1"></a>
+                <!-- logo of whatsapp -->
+                <a href="#"><img class="logo" src="img/whatsapp.png" alt="Logo téléphone" id="logo2"></a>
+                <!-- logo of facebook -->
+                <a href="#"><img class="logo" src="img/facebook.png" alt="Logo facebook" id="logo3"></a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+</body>
+<script>
+        /* select the image balise */
+        const menuHamburger = document.querySelector(".hamburger_button")
+        /* select the nav bar */
+        const navLinks = document.querySelector(".menu")
+
+        /* if the image is click */
+        menuHamburger.addEventListener('click',()=>{
+        /* add a class for the nav bar  */
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</html>
