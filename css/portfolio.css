@@ -1,0 +1,279 @@
+/* color of the portfolio button  */
+#portfolio{
+    color: #ed3c57;
+}
+
+/* define the color of the page  */
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --main-color: #0ef;
+}
+
+/* define the color of the page  */
+html{
+    background: var(--bg-color);
+    color: #fff;
+}
+
+/* center the sentences */
+.text{
+    width: 100%;
+    padding: 230px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* font-size of the sub-subtitle */
+.text h3{
+    font-size: 3.2rem;
+}
+
+/* font-size of the title */
+.text h1{
+    line-height: 10px;
+}
+
+/* center the carousel */
+.info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+
+}
+
+/* size of the carousel */
+.swiper{
+    width: 80%;
+    height: 70%;
+}
+
+/* size of the images in the carousel */
+.swiper-slide img{
+    width: 100%;
+}
+
+/* center and aligns the sentences */
+.main{
+    display: flex;
+    background-color: var(--second-bg-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+}
+
+/* font-size of the sub-subtitle */
+.main h3{
+    font-size: 3.4em;
+}
+
+/* center the images div*/
+.example{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* center the images div*/
+.imgs{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* characteristic of the images */
+.imgs img{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    padding-bottom: 150px;
+    transition: all 0.3s;
+    padding-left: 20px;
+}
+
+/*responsive from page below 1032px */
+@media screen and (max-width: 1032px){
+
+    /* shows the bar nav on the side */
+    #nav_bar{
+        padding: 0px;
+    }
+
+    /* characteristic of the right side menu */
+    .menu{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    /*  set the nav bar on column */
+    #head_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* create the side menu */
+    .mobile-menu{
+        margin-left: 0;
+    }
+
+    /* the button is no longer hidden */
+    .hamburger_button{
+        display: block;
+    }
+}
+
+/*responsive from page below 960px */
+@media screen and (max-width: 960px){
+
+    /* font-size of the sub-subtitle */
+    .text h3{
+        font-size: 2.2rem;
+    }
+
+    /* font-size of the title */
+    .text h1{
+        font-size: 4.4rem;
+        line-height: 1.3px;
+    }
+
+    /* set on column the images */
+    .imgs{
+        flex-direction: column;
+    }
+
+    /* center the images */
+    .imgs img{
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .imgs img:hover{
+    transform: scale(1.3);
+}
+
+}
+
+/*responsive from page below 800px */
+@media screen and (max-width: 800px){
+
+    /* font-size of the title */
+    .text h1, h1{
+        font-size: 3em;
+    }
+
+    /* font-size of the sub-subtitle */
+    .main h3{
+        font-size: 2em;
+    }
+
+    /* font-size of the sentences on the main div */
+    .main p{
+        font-size: 0.8em;
+    }
+}
+
+/*responsive from page below 530px */
+@media screen and (max-width: 530px){
+
+    /* font-size of the title */
+    .text h1, h1{
+        font-size: 2em;
+    }
+
+     /* font-size of the sub-subtitle */
+    .text h3, h3 {
+        font-size: 1.5em;
+    }
+
+    /* font-size of the sentences on the main div */
+    .main p{
+        font-size: 0.8em;
+    }
+
+    /* space between the titles at the top of the page  */
+    .home_title{
+        padding-top: 10px;
+    }
+}
+
+/*responsive from page below 340px */
+@media screen and (max-width: 340px){
+
+    /* font-size of the title */
+    .text h1, h1{
+        font-size: 1.5em;
+    }
+
+    /* font-size of the sub-subtitle */
+    .text h3, h3{
+        font-size: 1em;
+    }
+
+    /* font-size of the sentences on the main div */
+    .main p{
+        font-size: 0.8em;
+    }
+}
+
+/*responsive from page below 260px */
+@media screen and (max-width: 260px){
+
+    /* font-size of the title */
+    .text h1, h1{
+        font-size: 1.2em;
+    }
+
+    /* font-size of the sub-subtitle */
+    .text h3, h3{
+        font-size: 0.9em;
+    }
+
+    /* font-size of the sentences on the main div */
+    .main p{
+        font-size: 0.8em;
+    }
+
+}
+
+/*responsive from page below 200px */
+@media screen and (max-width: 200px){
+
+    /* font-size of the title */
+    .text h1, h1{
+        font-size: 1em;
+    }
+
+    /* font-size of the sub-subtitle */
+    .text h3, h3{
+        font-size: 0.7em;
+    }
+
+    /* font-size of the sentences on the main div */
+    .main p{
+        font-size: 0.8em;
+    }
+}
