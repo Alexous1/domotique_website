@@ -1,2 +1,2 @@
 # domotique_website
-/img/video.gif
+(/img/video.gif)
